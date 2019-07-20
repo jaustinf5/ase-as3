@@ -1,0 +1,10 @@
+install rpm
+-
+Download rpm package via GitHub
+Download Cygwin via chrome
+- on installation enable curl
+Set all the variables
+- VAR="..."
+- export VAR="..."
+Follow the upload curl script
+- make sure to run all commands from https://clouddocs.f5.com/products/extensions/f5-appsvcs-extension/latest/userguide/installation.html
