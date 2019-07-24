@@ -1,3 +1,30 @@
+Steps to get the BIGIP up and running with the pools, virtual servers and security policy attached to the virtual server:
+
+In the TMSH, type following commands:
+
+$ bash
+$ touch /var/config/rest/iapps/enable
+
+this enables the iControl LX under iApps ("package management LX")
+
+next navigate to the F5 github and locate the latest .rpm file for AS3
+
+https://github.com/F5Networks/f5-appsvcs-extension/tree/master/dist/latest
+
+download and save the .rpm locally
+
+Navigate to iApps->Package Management LX and click import...
+
+find the .rpm file and click upload
+
+Now that we have completed the steps above, we are ready to send a POST to the API endpiont /mgmt/shared/appsvcs/declare with our JSON
+
+In Postman (or any other API tool) send a POST to the endpoint "https://<big_ip>/mgmt/shared/appsvcs/declare" 
+Grab the .json file from the Github repo (and edit as necessary for your environment) and send the request and ensure you recieve a 200 OK status
+
+In the BIGIP Gui , navigate to the correct partition and all the changes should be successfully seen.
+
+
 install rpm
 -
 Download rpm package via GitHub
