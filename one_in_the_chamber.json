@@ -54,7 +54,7 @@
             },
             "Security_Policy":{
             	"class": "WAF_Policy",
-            	"url": "http://download.ase-exercise.internal/security_policy.xml",
+            	"url": "http://download.ase-exercise.internal/asm_sec_policy.xml",
             	"ignoreChanges": true
             }
             
