@@ -54,7 +54,7 @@
             },
             "Security_Policy":{
             	"class": "WAF_Policy",
-            	"url": "https://raw.githubusercontent.com/jaustinf5/ase-as3/master/asm_sec_policy.xml",
+            	"url": "http://download.ase-exercise.internal/security_policy.xml",
             	"ignoreChanges": true
             }
             
