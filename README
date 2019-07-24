@@ -20,7 +20,9 @@ find the .rpm file and click upload
 Now that we have completed the steps above, we are ready to send a POST to the API endpiont /mgmt/shared/appsvcs/declare with our JSON
 
 In Postman (or any other API tool) send a POST to the endpoint "https://<big_ip>/mgmt/shared/appsvcs/declare" 
-Grab the .json file from the Github repo (and edit as necessary for your environment) and send the request and ensure you recieve a 200 OK status
+Grab the .json file from the Github repo (and edit as necessary for your environment) 
+Grab the .xml security policy and save where you would prefer (and edit the .json file as necessary)
+send the request and ensure you recieve a 200 OK status
 
 In the BIGIP Gui , navigate to the correct partition and all the changes should be successfully seen.
 
